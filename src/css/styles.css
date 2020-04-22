@@ -12,6 +12,7 @@ body, header{
   display:flex;
   justify-content: space-between;
   padding: 15px 0;
+  height: 75px;
 }
 .header_logo img{
   width:200px;
@@ -19,7 +20,7 @@ body, header{
   margin-left: 10px;
 }
 .header_menu{
-  padding-right: 15px;
+  padding-right: 25px;
 }
 .header_menu-profile{
   display:flex;
@@ -51,4 +52,29 @@ body, header{
 }
 .header_menu-navbar li:hover a{
   text-decoration: underline;
+}
+.main{
+  display:flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_title{
+  font-size: 25px;
+}
+.input{
+  width:70%;
+  border-radius: 50px;
+  height: 40px;
+  margin-top: 25px;
+  padding:0 20px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  outline: none;
+  color: white;
+}
+::placeholder{
+  color: white;
 }
