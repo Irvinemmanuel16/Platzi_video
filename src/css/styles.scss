@@ -1,168 +1,141 @@
-* {
-  margin: 0;
+*{
+  margin:0;
 }
-
 body::-webkit-scrollbar {
   display: none;
 }
-
-body, header {
+body, header{
   background-color: #142850;
   width: 100%;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   color: white;
 }
-
-a {
-  font-family: "Muli", sans-serif;
+a{
+  font-family: 'Muli', sans-serif;
   text-decoration: none;
-  color: white;
+  color:white;
 }
-
-.header {
-  display: flex;
+.header{
+  display:flex;
   justify-content: space-between;
   padding: 15px 0;
   height: 75px;
 }
-
-.header_logo img {
-  width: 200px;
+.header_logo img{
+  width:200px;
   align-items: center;
   margin-left: 10px;
 }
-
-.header_menu {
+.header_menu{
   padding-right: 25px;
 }
-
-.header_menu-profile {
-  display: flex;
+.header_menu-profile{
+  display:flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 9px;
 }
-
-.header_menu-profile img {
-  width: 37px;
+.header_menu-profile img{
+  width:37px;
   margin-right: 15px;
   margin-left: 15px;
 }
-
-.header_menu:hover ul {
+.header_menu:hover ul{
   display: block;
 }
-
-.header_menu-navbar {
+.header_menu-navbar{
   display: none;
-  padding: 0;
+  padding:0;
   list-style: none;
   text-align: right;
 }
-
-.header_menu-navbar li {
+.header_menu-navbar li{
   margin-top: 5px;
 }
-
-.header_menu-navbar a {
+.header_menu-navbar a{
   color: white;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   text-decoration: none;
 }
-
-.header_menu-navbar li:hover a {
+.header_menu-navbar li:hover a{
   text-decoration: underline;
 }
-
-.main {
-  display: flex;
+.main{
+  display:flex;
   height: 300px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.main_title {
+.main_title{
   font-size: 25px;
 }
-
-.categories_title {
+.categories_title{
   padding-left: 30px;
   position: absolute;
   width: 100%;
-  font-size: 20px;
+  font-size: 20px;;
 }
-
-.input {
-  width: 70%;
+.input{
+  width:70%;
   border-radius: 50px;
   height: 40px;
   margin-top: 25px;
-  padding: 0 20px;
+  padding:0 20px;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   outline: none;
   color: white;
 }
-
-::placeholder {
-  font-family: "Muli", sans-serif;
+::placeholder{
+  font-family: 'Muli', sans-serif;
   color: white;
 }
-
-.carousel {
-  width: 100%;
+.carousel{
+  width:100%;
   overflow: scroll;
   padding: 30px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
-
-.carousel::-webkit-scrollbar {
-  display: none;
+.carousel::-webkit-scrollbar{
+  display:none;
 }
-
-.carousel_container {
+.carousel_container{
   white-space: nowrap;
-  margin: 70px 0;
+  margin:70px 0;
   padding-bottom: 10px;
 }
-
-.carousel_item {
+.carousel_item{
   background-color: blue;
   width: 200px;
   height: 250px;
   display: inline-block;
   border-radius: 20px;
-  overflow: hidden;
+  overflow:hidden;
   margin-right: 10px;
   cursor: pointer;
   transition: 450ms all;
   transform-origin: center left;
   position: relative;
-  font-family: "Muli", sans-serif;
-  color: white;
+  font-family: 'Muli', sans-serif;
+  color:white;
 }
-
-.carousel_item:hover ~ .carousel_item {
+.carousel_item:hover ~ .carousel_item{
   transform: translate3d(100px, 0, 0);
 }
-
-.carousel_container:hover .carousel_item {
+.carousel_container:hover .carousel_item{
   opacity: 0.3;
 }
-
-.carousel_container:hover .carousel_item:hover {
+.carousel_container:hover .carousel_item:hover{
   transform: scale(1.5);
   opacity: 1;
 }
-
-.carousel_item:hover .carousel_item-details {
-  opacity: 1;
+.carousel_item:hover .carousel_item-details{
+  opacity:1;
 }
-
-.carousel_item-details {
+.carousel_item-details{
   position: absolute;
   top: 1;
   right: 0;
@@ -172,36 +145,29 @@ a {
   font-size: 10px;
   transition: 450ms opacity;
   opacity: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%);
 }
-
-.carousel_item-img {
-  width: 100%;
+.carousel_item-img{
+  width:100%;
   height: 100%;
   object-fit: cover;
 }
-
-.carousel_item-details_icons img {
+.carousel_item-details_icons img{
   width: 10%;
 }
-
-.footer {
+.footer{
   background-color: #142850;
   display: flex;
   align-items: center;
-  height: 105px;
+  height: 105px ;
   width: 100%;
 }
-
-.footer a {
+.footer a{
   color: white;
   cursor: pointer;
   padding-left: 30px;
   font-size: 14px;
 }
-
-.footer a:hover {
+.footer a:hover{
   text-decoration: underline;
 }
-
-/*# sourceMappingURL=styles.css.map */
